@@ -15,6 +15,7 @@ with open("tickets.html", 'a') as f:
     f.write('''<!DOCTYPE html>
 <html lang="it">
 <head>
+    <link href="https://mastodon.uno/@ildave" rel="me">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>I miei concerti</title>
@@ -69,9 +70,25 @@ with open("tickets.html", 'a') as f:
             font-weight: bold;
             cursor: pointer;
         }
+        .mastodon {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 75px;
+            background-color: #143D60;
+            color: #DAA520;
+            border: 1px solid #DAA520;
+            border-radius: 0px 5px 0px 0px;
+            font-weight: bold;
+        }
+        .mastodon a {
+            color: #DAA520;
+        }
     </style>
 </head>
-<body>''') 
+<body>
+<div class="mastodon"><a href="https://mastodon.uno/@ildave" rel="me">Mastodon</a></div>
+''') 
 
     for file in onlyfiles:
         f.write('<div class="container">')
