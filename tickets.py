@@ -48,7 +48,6 @@ with open("tickets.html", 'a') as f:
             font-weight: bold;
 
         }
-        /* Stili per la finestra modale */
         .modal {
             display: none;
             position: fixed;
@@ -110,7 +109,6 @@ with open("tickets.html", 'a') as f:
     
     f.write('''<script>
         
-        // Funzione per aprire la finestra modale
         function openModal(imageSrc, n) {
             console.log(imageSrc, n, "imgModal"+n);
             var modal = document.getElementById("myModal"+n);
@@ -120,13 +118,11 @@ with open("tickets.html", 'a') as f:
             console.log(modalImg.src);
         }
 
-        // Aggiungi eventi di click alle immagini
         document.querySelectorAll('.image').forEach(item => {item.onclick = function() {
             var id = this.id;
             var n = id.replace('image', '');
             openModal(this.src, n);}
-            });
-    
+            });    
 
         document.querySelectorAll('.close').forEach(item => {
             item.onclick = function() {
