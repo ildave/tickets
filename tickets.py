@@ -1,5 +1,18 @@
 from os import listdir
 from os.path import isfile, join
+
+def write_container(f, i):
+    f.write('<div class="container">')
+    f.write('<img src="tickets/'+file+'" alt="'+file+'" class="image" id="image'+str(i)+'">')
+    f.write('<div class="caption">'+dida[file]+'</div>')
+    f.write('</div>')
+
+def write_modal(f, i):
+    f.write('<div id="myModal'+str(i)+'" class="modal">')
+    f.write('<span class="close">&times;</span>')
+    f.write('<img class="modal-content" id="imgModal'+str(i)+'">')
+    f.write('</div>')
+
 path = "./tickets"
 onlyfiles = [f for f in listdir(path) if isfile(join(path, f))]
 
@@ -94,17 +107,11 @@ with open("tickets.html", 'a') as f:
 ''') 
 
     for file in onlyfiles:
-        f.write('<div class="container">')
-        f.write('<img src="tickets/'+file+'" alt="'+file+'" class="image" id="image'+str(i)+'">')
-        f.write('<div class="caption">'+dida[file]+'</div>')
-        f.write('</div>')
+        write_container(f, i)
         i = i + 1
     i = 1;
     for file in onlyfiles:
-        f.write('<div id="myModal'+str(i)+'" class="modal">')
-        f.write('<span class="close">&times;</span>')
-        f.write('<img class="modal-content" id="imgModal'+str(i)+'">')
-        f.write('</div>')
+        write_modal(f, i)
         i = i + 1
     
     f.write('''<script>
