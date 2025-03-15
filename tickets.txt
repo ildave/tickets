@@ -83,3 +83,4 @@ IMG_3242.JPEG=Mr. Bungle, Circolo Magnolia, Segrate, 2024
 IMG_3243.JPEG=Rammstein, Campo Volo, Reggio Emilia, 2024
 IMG_4580.JPEG=Arch Enemy e In Flames, Alcatraz, Milano, 2024
 IMG_5387.JPEG=Quintorigo e John De Leo, Hiroshima Mon Amour, Torino, 2024
+IMG_5675.JPEG=Offlaga Disco Pax, Hiroshima Mon Amour, Torino, 2025
