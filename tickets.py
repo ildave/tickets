@@ -40,6 +40,13 @@ with open("tickets.html", 'a') as f:
         body {
             background-color: #DAA520;
         }
+        .father {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            padding: 20px;
+            align-items: flex-start;
+        }
         .container {
             text-align: center;
             padding: 10px;
@@ -100,15 +107,22 @@ with open("tickets.html", 'a') as f:
         .mastodon a {
             color: #DAA520;
         }
+        @media (max-width: 768px) {
+            .father {
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
 <div class="mastodon"><a href="https://mastodon.uno/@ildave" rel="me">Mastodon</a></div>
+<div class="father">
 ''') 
 
     for file in onlyfiles:
         write_container(f, i)
         i = i + 1
+    f.write("</div>") #chiudo .father
     i = 1;
     for file in onlyfiles:
         write_modal(f, i)
