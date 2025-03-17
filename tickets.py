@@ -23,7 +23,7 @@ with open('tickets.txt', 'r') as f:
         n, d = line.split("=")
         dida[n] = d.rstrip()
 
-with open("tickets.html", 'a') as f:
+with open("tickets.html", 'w') as f:
     i = 1
     f.write('''<!DOCTYPE html>
 <html lang="it">
