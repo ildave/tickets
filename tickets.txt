@@ -86,3 +86,4 @@ IMG_5387.JPEG=Quintorigo e John De Leo, Hiroshima Mon Amour, Torino, 2024
 IMG_5675.JPEG=Offlaga Disco Pax, Hiroshima Mon Amour, Torino, 2025
 IMG_6012.JPEG=Jovanotti, PalaInalpi, Torino, 2025
 IMG_6013.JPEG=Ghost, Forum di Assago, 2025
+IMG_6014.PNG=Fast Animals and Slow Kids, Lago Lexert, Aosta, 2025
