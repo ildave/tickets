@@ -88,3 +88,4 @@ IMG_6012.JPEG=Jovanotti, PalaInalpi, Torino, 2025
 IMG_6013.JPEG=Ghost, Forum di Assago, 2025
 IMG_6014.PNG=Fast Animals and Slow Kids, Lago Lexert, Aosta, 2025
 IMG_6015.jpg=Dark Tranquillity, Metalitalia Festival, Trezzo sull'Adda, 2025
+IMG_6016.jpg=Sunn O))), AudioDrome, Moncalieri, 2025
